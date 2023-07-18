@@ -3,7 +3,7 @@ import MoonIcon from "./components/icons/MoonIcon"
 
 const App = () => {
     return (
-        <div className="bg-[url('./assets/images/bg-mobile-light.jpg')] bg-contain bg-no-repeat bg-gray-300 min-h-screen">
+        <div className="bg-[url('./assets/images/bg-mobile-light.jpg')] bg-gray-300 min-w-screen min-h-screen bg-no-repeat bg-contain">
             <header className="container mx-auto px-4 pt-4">
                 <div className="flex justify-between">
                     <h1 className="uppercase text-white text-3xl font-semibold tracking-[0.3em]">
@@ -23,6 +23,26 @@ const App = () => {
             </header>
             <main className="container mx-auto mt-4 px-4">
                 <div className="rounded-md bg-white [&>article]:p-4" >
+                    <article className="flex gap-4 border-b-gray-400 border-b">
+                        <button className="inline-block h-5 w-5 rounded-full border-2 className= flex-none"></button>
+                        <p className="text-gray-600 grow">
+                            Complete online Javascript course in blueweb
+                        </p>
+                        <button className="flex-none">
+                            <CrossIcon />
+                        </button>
+                    </article>
+
+                    <article className="flex gap-4 border-b-gray-400 border-b">
+                        <button className="inline-block h-5 w-5 rounded-full border-2 className= flex-none"></button>
+                        <p className="text-gray-600 grow">
+                            Complete online Javascript course in blueweb
+                        </p>
+                        <button className="flex-none">
+                            <CrossIcon />
+                        </button>
+                    </article>
+
                     <article className="flex gap-4 border-b-gray-400 border-b">
                         <button className="inline-block h-5 w-5 rounded-full border-2 className= flex-none"></button>
                         <p className="text-gray-600 grow">
