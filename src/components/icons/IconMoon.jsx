@@ -1,5 +1,5 @@
 // eslint-disable-next-line react/prop-types
-const MoonIcon = ({ color = "#FFF", ...props }) => {
+const IconMoon = ({ color = "#FFF", ...props }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
             <path
@@ -12,4 +12,4 @@ const MoonIcon = ({ color = "#FFF", ...props }) => {
     );
 };
 
-export default MoonIcon;
+export default IconMoon;
