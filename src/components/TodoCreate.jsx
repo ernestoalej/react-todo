@@ -25,13 +25,13 @@ const TodoCreate = ({createTodo}) => {
         <>        
         <form
           onSubmit={handleSubmitAddTodo}
-          className="dark:bg-gray-800 flex items-center gap-4 overflow-hidden rounded-md bg-white px-4 py-4">
+          className="dark:bg-gray-800 flex items-center gap-4 overflow-hidden rounded-md bg-white px-4 py-4 transition-all duration-1000">
         <TodoCheck checked={completed} />
         <input
           value={title}
           type="text"
           placeholder="Create a new todo..."
-          className="dark:bg-gray-800 w-full text-gray-500 outline-none"
+          className="dark:bg-gray-800 w-full text-gray-500 outline-none transition-all duration-1000"
           onChange={(e)=>
           setTitle(e.target.value)} />
     </form>

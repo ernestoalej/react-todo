@@ -7,7 +7,7 @@ const TodoItem = ({todo, deleteTodo, updateTodo}) => {
     const { id, title, completed } = todo
     
     return (
-        <article className="flex gap-4 border-b border-b-gray-400 dark:bg-gray-800 dark:text-gray-200">
+        <article className="flex gap-4 border-b border-b-gray-400 dark:text-gray-200">
         
         <TodoCheck checked = {completed} handleClick={() => updateTodo(id)} />
 
