@@ -6,7 +6,10 @@ import TodoComputed from "./components/TodoComputed";
 import TodoFilter from "./components/TodoFilter";
 import { useEffect, useState } from "react";
 
-const initialStateTodos = JSON.parse(localStorage.getItem('todos') || [])
+// Corregir error en despliegue. Valida primero que se tenga valor y luego hacer el parse:
+const storedTodos = localStorage.getItem('todos');
+const initialStateTodos = storedTodos ? JSON.parse(storedTodos) : [];
+
 
 const App = () => {
 
